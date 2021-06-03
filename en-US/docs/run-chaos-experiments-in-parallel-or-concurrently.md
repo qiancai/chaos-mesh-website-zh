@@ -1,6 +1,6 @@
 ---
-title: 串行或并行运行实验
-sidebar_label: 串行或并行运行实验
+title: Serial or Parallel Experiments
+sidebar_label: Serial or Parallel Experiments
 ---
 
 ## TODO
