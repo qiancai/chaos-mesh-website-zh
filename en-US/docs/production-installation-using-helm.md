@@ -1,6 +1,6 @@
 ---
-title: 使用 Helm 安装（生产推荐）
-sidebar_label: 使用 Helm 安装（生产推荐）
+title: Install with Helm (recommended production)
+sidebar_label: Install with Helm (recommended production)
 ---
 
 ## TODO
