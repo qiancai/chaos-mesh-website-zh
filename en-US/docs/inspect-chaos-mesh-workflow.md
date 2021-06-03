@@ -1,6 +1,6 @@
 ---
-title: 检查 Workflow 状态
-sidebar_label: 检查 Workflow 状态
+title: Check workflow status
+sidebar_label: Check workflow status
 ---
 
 ## TODO
