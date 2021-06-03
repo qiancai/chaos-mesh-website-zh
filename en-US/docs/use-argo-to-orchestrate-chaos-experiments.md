@@ -1,6 +1,6 @@
 ---
-title: 使用 Argo 编排混沌实验
-sidebar_label: 使用 Argo 编排混沌实验
+title: Use Argo Coding Chaos Experiment
+sidebar_label: Use Argo Coding Chaos Experiment
 ---
 
 ## TODO
