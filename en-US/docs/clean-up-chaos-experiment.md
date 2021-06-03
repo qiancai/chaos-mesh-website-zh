@@ -1,6 +1,6 @@
 ---
-title: 清理实验
-sidebar_label: 清理实验
+title: Clear Experiments
+sidebar_label: Clear Experiments
 ---
 
 ## TODO
