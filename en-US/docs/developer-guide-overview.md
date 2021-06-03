@@ -1,6 +1,6 @@
 ---
-title: 开发指南概览
-sidebar_label: 开发指南概览
+title: Overview of the development guide
+sidebar_label: Overview of the development guide
 ---
 
 ## TODO
