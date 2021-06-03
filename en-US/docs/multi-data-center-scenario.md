@@ -1,6 +1,6 @@
 ---
-title: 多数据中心场景
-sidebar_label: 多数据中心场景
+title: Multi-Data Center Scene
+sidebar_label: Multi-Data Center Scene
 ---
 
 ## TODO
