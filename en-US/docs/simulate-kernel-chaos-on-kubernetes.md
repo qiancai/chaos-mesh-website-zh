@@ -1,6 +1,6 @@
 ---
-title: 模拟内核故障
-sidebar_label: 模拟内核故障
+title: Simulate kernel fault
+sidebar_label: Simulate kernel fault
 ---
 
 ## TODO
