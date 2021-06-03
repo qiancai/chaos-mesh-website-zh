@@ -1,6 +1,6 @@
 ---
-title: 离线安装
-sidebar_label: 离线安装
+title: Install offline
+sidebar_label: Install offline
 ---
 
 ## TODO
