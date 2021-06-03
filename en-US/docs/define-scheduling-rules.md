@@ -1,6 +1,6 @@
 ---
-title: 定义调度规则
-sidebar_label: 定义调度规则
+title: Define scheduling rules
+sidebar_label: Define scheduling rules
 ---
 
 ## TODO
