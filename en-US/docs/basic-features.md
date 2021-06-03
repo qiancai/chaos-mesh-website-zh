@@ -1,6 +1,6 @@
 ---
-title: 基本功能
-sidebar_label: 基本功能
+title: Basic features
+sidebar_label: Basic features
 ---
 
 ## TODO
