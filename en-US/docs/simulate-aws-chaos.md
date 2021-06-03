@@ -1,6 +1,6 @@
 ---
-title: 模拟 AWS 故障
-sidebar_label: 模拟 AWS 故障
+title: Simulate AWS fault
+sidebar_label: Simulate AWS fault
 ---
 
 ## TODO
