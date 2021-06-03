@@ -1,6 +1,6 @@
 ---
-title: 拓展 Chaos Daemon 接口
-sidebar_label: 拓展 Chaos Daemon 接口
+title: Extension Chaos Daemon interface
+sidebar_label: Extension Chaos Daemon interface
 ---
 
 ## TODO
