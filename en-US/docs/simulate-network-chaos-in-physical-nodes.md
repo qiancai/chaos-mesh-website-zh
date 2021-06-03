@@ -1,6 +1,6 @@
 ---
-title: 模拟网络故障
-sidebar_label: 模拟网络故障
+title: Simulate network fault
+sidebar_label: Simulate network fault
 ---
 
 ## TODO
