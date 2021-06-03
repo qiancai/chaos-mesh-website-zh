@@ -1,6 +1,6 @@
 ---
-title: 创建 Chaos Mesh Workflow
-sidebar_label: 创建 Chaos Mesh Workflow
+title: Create Chaos Mesh Workflow
+sidebar_label: Create Chaos Mesh Workflow
 ---
 
 ## TODO
