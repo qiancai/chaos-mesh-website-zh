@@ -1,6 +1,6 @@
 ---
-title: 模拟 DNS 故障
-sidebar_label: 模拟 DNS 故障
+title: Simulate DNS fault
+sidebar_label: Simulate DNS fault
 ---
 
 ## TODO
