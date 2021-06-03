@@ -1,6 +1,6 @@
 ---
-title: 模拟进程故障
-sidebar_label: 模拟进程故障
+title: Simulate process fault
+sidebar_label: Simulate process fault
 ---
 
 ## TODO
