@@ -1,6 +1,6 @@
 ---
-title: Chaosd 组件简介
-sidebar_label: Chaosd 组件简介
+title: Chaosd Component Intro
+sidebar_label: Chaosd Component Intro
 ---
 
 ## TODO
