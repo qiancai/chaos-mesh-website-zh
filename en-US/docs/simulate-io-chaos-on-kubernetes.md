@@ -1,6 +1,6 @@
 ---
-title: 模拟文件 I/O 故障
-sidebar_label: 模拟文件 I/O 故障
+title: Simulate file I/O fault
+sidebar_label: Simulate file I/O fault
 ---
 
 ## TODO
