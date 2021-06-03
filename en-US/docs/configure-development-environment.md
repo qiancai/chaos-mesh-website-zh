@@ -1,6 +1,6 @@
 ---
-title: 配置开发环境
-sidebar_label: 配置开发环境
+title: Configure the development environment
+sidebar_label: Configure the development environment
 ---
 
 ## TODO
