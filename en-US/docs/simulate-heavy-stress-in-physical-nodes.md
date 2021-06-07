@@ -72,82 +72,82 @@ The associated configuration is described below in the table：
 | Workers            | w                       | Specify the number of walkers used to generate CPU pressure                                  | int type, default is 1                     |
 | Options            | o                       | Stress-ng other parameter settings, typically not configured                                 | string type, default value is ""           |
 
-### 模拟内存压力场景
+### Simulate memory pressure scene
 
 运行以下命令可查看模拟内存压力场景支持的配置：
 
 ```bash
-chaosd attack stress mem --help
+chaosd attack address mem --help
 ```
 
-输出如下所示：
+Output shown below：
 
 ```bash
-continuously stress virtual memory out
+continued virtual memory out
 
 Usage:
-  chaosd attack stress mem [options] [flags]
+  chaosd attack address mem [options] [flags]
 
 Flags:
-  -h, --help              help for mem
-  -o, --options strings   extend stress-ng options.
-  -s, --size string       Size specifies N bytes consumed per vm worker, default is the total available memory. One can specify the size as % of total available memory or in units of B, KB/KiB, MB/MiB, GB/GiB, TB/TiB..
-  -w, --workers int       Workers specifies N workers to apply the stressor. (default 1)
+  -h, --help help help for mem
+  -o, --options strings extended stress-ng options.
+  -s, --size string Size specialities N bytes consumer per vm worker, default is the total available memory. One can specify the size as % of total available memory or in units of B, KB/KiB, MB/MiB, GB/GiB, TB/TiB.
+  -w, --workers int workers specializes N workers to apply the story. (default 1)
 
 Global Flags:
-      --log-level string   the log level of chaosd, the value can be 'debug', 'info', 'warn' and 'error'
+      --log-level string the log level of chaosd, The value can be 'debug', 'info', 'warn' and 'error'
 ```
 
-模拟内存压力相关配置说明如下表所示：
+Simulation of memory pressure associated with configuration is shown below in table：
 
-| 配置项     | 配置缩写 | 说明                           | 值                                                                   |
-|:------- |:---- |:---------------------------- |:------------------------------------------------------------------- |
-| size    | s    | 指定每个 vm worker 占用内存的大小       | 支持使用单位 B，KB/KiB，MB/MiB，GB/GiB，TB/TiB 来设置占用的内存大小。如果不设置，则默认占用所有可用的内存。 |
-| workers | w    | 指定用于生成内存压力的 worker 数量        | int 类型，默认值为 1                                                       |
-| options | o    | stress-ng 的其他参数设置，一般情况下不需要配置 | string 类型，默认值为 ""                                                   |
+| Configuration Item | Configure abbreviations | Note                                                           | Value                                                                                                                             |
+|:------------------ |:----------------------- |:-------------------------------------------------------------- |:--------------------------------------------------------------------------------------------------------------------------------- |
+| size               | s                       | Specify the size of memory per vm walker                       | Use unit B,KB/KiB,MB/MiB,GB/GiB,TB/TiB is supported to set the usage memory size.If not set, use all available memory by default. |
+| Workers            | w                       | Specify the number of walkers used to generate memory pressure | int type, default is 1                                                                                                            |
+| Options            | o                       | Stress-ng other parameter settings, typically not configured   | string type, default value is ""                                                                                                  |
 
-### 使用示例
+### Use Example
 
-模拟生成 CPU 压力：
+Simulate CPU pressure：
 
 ```bash
-chaosd attack stress cpu --workers 2 --load 10
+chaosd attack cpu --workers 2 --load 10
 ```
 
-输出如下所示：
+Output shown below：
 
 ```bash
-[2021/05/12 03:38:33.698 +00:00] [INFO] [stress.go:66] ["stressors normalize"] [arguments=" --cpu 2 --cpu-load 10"]
-[2021/05/12 03:38:33.702 +00:00] [INFO] [stress.go:82] ["Start stress-ng process successfully"] [command="/usr/bin/stress-ng --cpu 2 --cpu-load 10"] [Pid=27483]
-Attack stress cpu successfully, uid: 4f33b2d4-aee6-43ca-9c43-0f12867e5c9c
+[2021/05/12 03:38:33.698 +00:00] [INFO] [stress.go:66] ["ressors normalize"] [arguments=" --cpu 2 --cpu-load 10"]
+[2021/05/12 03:38:33.72 +00:00] [INFO] [stress. o:82] ["Start stress-ng process successfully"] [command="/usr/bin/stres-ng --cpu 2 --cpu-load 10"] [Pid=27483]
+Attack stress cpu sucessfully, uid: 4f33b2d4-aeee6-43ca-9c43-0f12867e5c9c
 ```
 
-模拟生成内存压力：
+Simulate generating memory pressure：
 
 ```bash
-chaosd attack stress mem --workers 2 --size 100M
+chaosd attack address mem --workers 2 --size 100M
 ```
 
-输出如下所示：
+Output shown below：
 
 ```bash
-[2021/05/12 03:37:19.643 +00:00] [INFO] [stress.go:66] ["stressors normalize"] [arguments=" --vm 2 --vm-keep --vm-bytes 100000000"]
-[2021/05/12 03:37:19.654 +00:00] [INFO] [stress.go:82] ["Start stress-ng process successfully"] [command="/usr/bin/stress-ng --vm 2 --vm-keep --vm-bytes 100000000"] [Pid=26799]
-Attack stress mem successfully, uid: c2bff2f5-3aac-4ace-b7a6-322946ae6f13
+[2021/05/12 03:37:19.63 +00:00] [INFO] [stress.go:66] ["stressors normalize"] [arguments=" --vm 2 --vm-keep-vm-bytes 100000"]
+[2021/05/12 03:37:37:19.654 +00:00] [INFO] [stress. o:82] ["Start stress-ng process successfully"] [command="/usr/bin/stres-ng --vm 2 --vm-bytes 100000"] [Pid=26799]
+Attack stress mem successfully, uid: c2bff2f5-3aac-4ac-b7a6-322946ae6f13
 ```
 
-在运行实验时，请注意保存实验的 uid 信息。在不需要模拟压力场景时，使用 `recover` 命令来结束 uid 对应的实验：
+When running the experiment, care is taken to save your experiment's uid information.在不需要模拟压力场景时，使用 `recover` 命令来结束 uid 对应的实验：
 
 ```bash
-chaosd recover c2bff2f5-3aac-4ace-b7a6-322946ae6f13
+chaosd recover c2bff2f5-3aac-4ac-b7a6-322946ae6f13
 ```
 
-输出如下所示：
+Output shown below：
 
 ```bash
-Recover c2bff2f5-3aac-4ace-b7a6-322946ae6f13 successfully
+Recover c2bff2f5-3aac-4ace-b7a6-322946ae6f13 succesfully
 ```
 
-## 使用服务模式创建压力实验
+## Create pressure experiments using service mode
 
-（待补充）
+(To be added)
